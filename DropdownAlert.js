@@ -135,8 +135,7 @@ export default class DropdownAlert extends Component {
       return
     }
     if (this.state.isOpen) {
-      this.dismiss()
-      return
+        clearTimeout(closeTimeoutId);
     }
     if (this.state.isOpen == false) {
       this.setState({
